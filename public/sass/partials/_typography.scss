@@ -1,0 +1,151 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.App__header {
+  text-align: center;
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 2.25em;
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+.top-controls {
+  span {
+    a {
+      font-size: 0.75em;
+      color: $subtext;
+      text-decoration: none;
+    }
+  }
+
+  .focused {
+    a {
+      color: $bright;
+    }
+  }
+}
+
+.search-bar {
+  input {
+    float: left;
+    margin-left: 3%;
+    border: 0;
+    color: $subtext;
+  }
+
+  span {
+    i {
+      color: $blush;
+    }
+  }
+}
+
+.post {
+  h6 {
+    font-size: 0.8em;
+  }
+
+  h1 {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  i,
+  p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 0.8em;
+    color: $subtext;
+  }
+
+  .offline {
+    color: $mint;
+    font-size: 0.75em;
+  }
+
+  .post-meta {
+    font-size: 0.6em;
+  }
+}
+
+.profile {
+  .profile-card {
+    p {
+      text-align: center;
+    }
+    .profile-icon {
+      text-align: center;
+      margin: 0;
+      i {
+        font-size: 2em;
+        color: $bright;
+      }
+    }
+    .profile-name {
+      color: $bright;
+      font-size: 1.25em;
+      font-weight: 600;
+      text-align: center;
+    }
+    .account-info {
+      color: $subtext;
+    }
+  }
+}
+
+.post-controls {
+  position: absolute;
+  margin: -15px 5px 0 -5px !important;
+
+  h1 {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 2.25em;
+    height: 2.25em;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 10px 14px 0 rgba(117,118,126,0.35);
+
+    i {
+      font-size: 1.25em;
+      line-height: 1.25em;
+      vertical-align: middle;
+      color: $blush;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.App__footer {
+  i, a {
+    width: 100%;
+    line-height: 8vh;
+    vertical-align: middle;
+    color: $subtext;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a.selected {
+    color: $blush !important;
+  }
+  @media(min-width: 576px) {
+    i, a {
+      font-size: 1.5em;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $faded;
+      }
+    }
+  }
+}
